@@ -15,16 +15,4 @@ interface Address {
     }
 
     @Override
-    public void displayAddressDetails(){
-        System.out.println("338 Staggie Drive");
-    }
-    
-}
-
-public class Inheritance{
-    public static void main(String[] args) {
-       Contact newContact = new Contact();
-       newContact.displayPersonDetails();
-       newContact.displayAddressDetails();
-    }
-}
+    public void displayAddressDeta
