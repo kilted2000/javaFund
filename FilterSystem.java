@@ -19,4 +19,15 @@ public class FilterSystem {
             try {
                 int price = Integer.parseInt(priceStr);
                 if (price >= min && price <= max) {
-                   
+                    System.out.println(entry);
+                }
+            } catch (NumberFormatException e) {
+                System.err.println("Error parsing price: " + priceStr);
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        filterByPriceRange(50, 150);  // Filters entries with prices between $50 and $150
+    }
+}
